@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-import com.zubiri.geometria.Circulo;
-import com.zubiri.geometria.Rectangulo;
+import com.zubiri.geometria.src.Circulo;
+import com.zubiri.geometria.src.Rectangulo;
 // http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/clase1/string.html
 
 public class OperacionesGeometricas {
