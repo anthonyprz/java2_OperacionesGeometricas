@@ -8,7 +8,7 @@ public class OperacionesGeometricas {
 
 	public static void main(String[] args) {
 
-		char opcion;
+		string opcion;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("\nque quieres realizar?:circulo / rectangulo / salir");
@@ -16,12 +16,11 @@ public class OperacionesGeometricas {
 // la opcion eqalsinorecase sirve para comparar las dos ociones si elijes una entonces if si no else
 	
 		
-	while (opcion != salir)
-	
+	while(!opcion.equalsIgnoreCase("salir")) {
 	
 
-	if (opcion == "circulo") 
-//antes	if (opcion.equalsIgnoreCase("circulo")) {
+	//if (opcion == "circulo") 
+     if (opcion.equalsIgnoreCase("circulo")) {
     
 		double radio, result; 
 		Circulo circulo = new Circulo();
@@ -41,8 +40,8 @@ public class OperacionesGeometricas {
 	
 }
 
-		else (opcion == "rectangulo")
-//antes	else (opcion.equalsIgnoreCase("rectangulo"))  {
+//		else (opcion == "rectangulo")
+	else (opcion.equalsIgnoreCase("rectangulo"))  {
 		double base, altura;
 /* antes */	Rectangulo operaciones = new Rectangulo();
 
@@ -66,7 +65,7 @@ public class OperacionesGeometricas {
 
 		System.out.println("\neste es el area de un rectangulo: " + operaciones.area());
 
-
+}
 
 }
 }
