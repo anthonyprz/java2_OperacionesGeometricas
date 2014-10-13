@@ -1,28 +1,37 @@
 import java.util.Scanner;
-
 import com.zubiri.geometria.Circulo;
 import com.zubiri.geometria.Rectangulo;
-// http://www.sc.ehu.es/sbweb/fisica/cursoJava/fundamentos/clase1/string.html
+
+//CLASSPATH=:/home/zubiri/ProyectosJava; export CLASSPATH
 
 public class OperacionesGeometricas {
 
 	public static void main(String[] args) {
 
-		string opcion;
+		char opcion;
 		
-
 		Scanner sc = new Scanner(System.in);
-		System.out.print("\nIngresa la opcion rectangulo o circulo");
+		System.out.print("\nque quieres realizar?:circulo / rectangulo / salir");
 		opcion = sc.next();
 // la opcion eqalsinorecase sirve para comparar las dos ociones si elijes una entonces if si no else
-	if (opcion.eqaulsInoreCase(circulo)==1) {
+	
+		
+	while (opcion != salir)
+	
+	
+
+	if (opcion == "circulo") 
+//antes	if (opcion.equalsIgnoreCase("circulo")) {
     
 		double radio, result; 
 		Circulo circulo = new Circulo();
 		 System.out.print("\ningresa el radio: ");
       		 radio = sc.nextDouble();
-		
-		 circulo.setRadio(radio);
+
+/*llamar constructor
+	   Circulo circulo = new Circulo (radio);
+*/		
+/*sobra*/	circulo.setRadio(radio);
 
 	  result =  circulo.circunferencia();
 	  System.out.println("La circunferencia es: " + result); 
@@ -31,9 +40,11 @@ public class OperacionesGeometricas {
 	  System.out.println("El area es: " + result); 
 	
 }
-else  {
+
+		else (opcion == "rectangulo")
+//antes	else (opcion.equalsIgnoreCase("rectangulo"))  {
 		double base, altura;
-		Rectangulo operaciones = new Rectangulo();
+/* antes */	Rectangulo operaciones = new Rectangulo();
 
 
 		System.out.print("\ningresar la altura del rectángulo: ");
@@ -44,8 +55,11 @@ else  {
 		System.out.print("\ningresar la base del rectángulo: ");
 		base = sc.nextDouble();
 
-		operaciones.setBase(base);
-		operaciones.setAltura(altura);
+/* llamar constructor		
+		Rectangulo operaciones = new Rectangulo(base, altura);
+*/
+/*sobra	por que la le estas llamando con el constructor*/	operaciones.setBase(base);
+/*sobra							*/ 	operaciones.setAltura(altura);
 
 
 		System.out.println("\neste es el perimetro de un rectangulo: " + operaciones.perimetro());
@@ -55,12 +69,7 @@ else  {
 
 
 }
-
-
-
-
- 
-	}
+}
 }
 
 
