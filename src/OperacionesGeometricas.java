@@ -1,10 +1,14 @@
 import java.util.Scanner;
-import com.zubiri.geometria.Circulo;
+import com.zubiri.geometria.*;
+
+/*import com.zubiri.geometria.Circulo;
 import com.zubiri.geometria.Rectangulo;
+*/
 
 //CLASSPATH=:/home/zubiri/ProyectosJava; export CLASSPATH
 
-public class OperacionesGeometricas {
+public class OperacionesGeometricas 
+{
 
 	public static void main(String[] args) {
 
@@ -16,11 +20,12 @@ public class OperacionesGeometricas {
 // la opcion eqalsinorecase sirve para comparar las dos ociones si elijes una entonces if si no else
 	
 		
-	while(!opcion.equalsIgnoreCase("salir")) {
+	while(!opcion.equalsIgnoreCase("salir"))
+	{
 	
 
 	//if (opcion == "circulo") 
-     if (opcion.equalsIgnoreCase("circulo")) {
+     if (opcion.equalsIgnoreCase("circulo")) 					{
     
 		double radio, result; 
 		Circulo circulo = new Circulo();
@@ -38,11 +43,14 @@ public class OperacionesGeometricas {
 	  result =  circulo.area();
 	  System.out.println("El area es: " + result); 
 	
-}
+										}
 
 //		else (opcion == "rectangulo")
-	else (opcion.equalsIgnoreCase("rectangulo"))  {
-		double base, altura;
+	else /*( (opcion.equalsIgnoreCase("rectangulo")) */  				{
+
+
+		double base;
+		double altura;
 /* antes */	Rectangulo operaciones = new Rectangulo();
 
 
@@ -65,10 +73,10 @@ public class OperacionesGeometricas {
 
 		System.out.println("\neste es el area de un rectangulo: " + operaciones.area());
 
-}
+											}
 
-}
-}
+	}
+						}
 }
 
 
